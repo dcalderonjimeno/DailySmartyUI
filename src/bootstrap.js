@@ -8,9 +8,9 @@ import thunk from 'redux-thunk';
 
 import reducers from "./reducers";
 
-const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.devToolsExtension ? window.DevToolsExtension() : f => f)(createStore)));
+const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import "./style/main.scss";
 
 import Home from './components/home';

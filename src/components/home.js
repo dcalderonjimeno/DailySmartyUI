@@ -11,8 +11,7 @@ class Home extends Component {
 
   handleSearchBarSumbit(query) {
     this.props.fetchPostsWithQuery(query);
-
-    this.props.history.push('./results');
+    this.props.history.push('/results');
   }
 
   render() {

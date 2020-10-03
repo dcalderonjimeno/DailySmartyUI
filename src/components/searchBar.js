@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm} from 'redux-form';
 
 import { withRouter } from 'react-router-dom';
 
 class SearchBar extends Component {
 
     handleFormSubmit = function({query}) {
-        this.porps.onSubmit(query);
+        this.props.onSubmit(query);
     }
-    
+
     renderInput(field) {
         return <input type="text" placeholder="Search DailySmarty" {...field.input}/>
     }
