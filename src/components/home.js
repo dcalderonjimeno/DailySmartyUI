@@ -18,12 +18,10 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
-        <div>
-          <Logo/>
-          <SearchBar onSumbit={(query) => this.handleSearchBarSumbit(query)}/>
-          <RecentPosts/>
-        </div>
+      <div className="home">
+        <Logo/>
+        <SearchBar onSumbit={(query) => this.handleSearchBarSumbit(query)}/>
+        <RecentPosts/>
       </div>
     );
   }
