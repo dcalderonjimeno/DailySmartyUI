@@ -20,7 +20,7 @@ class Home extends Component {
     return (
       <div className="home">
         <Logo/>
-        <SearchBar onSumbit={(query) => this.handleSearchBarSumbit(query)}/>
+        <SearchBar page="home" onSumbit={(query) => this.handleSearchBarSumbit(query)}/>
         <RecentPosts/>
       </div>
     );
