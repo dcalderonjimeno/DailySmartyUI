@@ -9,23 +9,22 @@ import * as actions from '../actions';
 
 class Home extends Component {
 
-  handleSearchBarSumbit(query) {
-    this.props.fetchPostsWithQuery(query, () => {
-      this.props.history.push('/results');
-    });
-   
+  handleSearchBarSubmit(query) {
+      this.props.fetchPostsWithQuery(query, () => {
+        this.props.history.push('/results');
+      });
+
   }
 
   render() {
     return (
       <div className="home">
         <Logo/>
-        <SearchBar page="home" onSumbit={(query) => this.handleSearchBarSumbit(query)}/>
+        <SearchBar page="home" onSubmit={(query) => this.handleSearchBarSubmit(query)}/>
         <RecentPosts/>
       </div>
     );
   }
 }
-
 
 export default connect(null, actions)(Home);

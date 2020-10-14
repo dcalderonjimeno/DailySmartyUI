@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm} from 'redux-form';
 
 import { withRouter } from 'react-router-dom';
 
@@ -10,9 +10,9 @@ class SearchBar extends Component {
     }
 
     renderInput(field) {
-        return <input type="text" placeholder="&#xf002; Search DailySmarty" {...field.input}/>
+        return <input type="text" placeholder="&#xf002; Search DailySmarty" {...field.input} />
     }
-    
+
     render() {
 
         const { handleSubmit } = this.props;

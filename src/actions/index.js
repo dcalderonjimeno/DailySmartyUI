@@ -1,5 +1,5 @@
 import { 
-    SET_RECENT_POSTS, 
+    SET_RECENT_POSTS,
     SET_RESULTS_POSTS
 } from './types';
 
